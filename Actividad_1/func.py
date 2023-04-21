@@ -7,7 +7,6 @@ from skimage import feature
 import skimage
 import numpy as np
 import random
-import cv2
 
 #----------------------------------------------
 def rgb_and_gray_scale(imagen):
@@ -29,7 +28,7 @@ def binarizacion(imagen):
     # Convertir la imagen a escala de grises
     img_binarizada = skimage.color.rgb2gray(imagen)
 
-    # Binarizar la imagen utilizando un umbral fijo (en este caso, 0.5)
+    # Binarizar la imagen utilizando un umbral fijo (en este caso, 0.2)
     Umbral = 0.2
     img_binarizada = img_binarizada > Umbral
 
